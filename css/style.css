@@ -1,0 +1,55 @@
+
+*{
+    box-sizing: border-box;
+}
+.header{
+    height: 100vh;
+}
+.header-content .main-content h1{
+    position: relative;
+    
+}
+.header-content .main-content h1::after{
+    content:"";
+    width: 100%;
+    height: 10px;
+    background: brown;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+}
+.services{
+    width: 100%;
+    height: 100vh;
+    background: #f7f7f9;
+}
+
+.columns{
+    transition: all 0.1s ease-in ;
+    cursor: pointer;
+}
+.columns:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 2px 2px #eee;
+    background: #111111;
+    color: white;
+}
+
+.prices{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.prices h3{
+    z-index: 100;
+}
+.prices::before{
+    content:"";
+    background: brown;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 0,100% 0,100% 60%,0 100% );
+}
